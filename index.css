@@ -1,0 +1,172 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #fffafd;
+    color: #333;
+}
+
+/* Шапка сайту */
+header {
+    background-color: #fca4d9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 4px solid #9e4bbf;
+}
+
+/* Логотип */
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #c756ab;
+    text-shadow: 2px 2px 0px #fff;
+    font-family: "Playfair Display", serif;
+}
+
+/* Навігація */
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #9e4bbf;
+}
+
+/* Основна частина сайту */
+main {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Головний заголовок */
+.hero-title {
+    text-align: center;
+    color: #c756ab;
+    font-size: 36px;
+}
+
+/* Опис під заголовком */
+.hero-desc {
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Зображення виробів */
+main img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+/* Описи виробів */
+main p {
+    max-width: 600px;
+    margin: 15px auto 30px;
+    line-height: 1.6;
+}
+
+/* Футер сайту */
+footer {
+    background-color: #fca4d9;
+    color: #fff;
+    border-top: 4px solid #9e4bbf;
+    margin-top: 40px;
+    padding: 30px 20px 15px;
+}
+
+/* Блоки футера */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* Заголовки футера */
+.footer-content h2 {
+    color: #c756ab;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.footer-content h3 {
+    color: #9e4bbf;
+}
+
+/* Посилання у футері */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #9e4bbf;
+}
+
+/* Контакти */
+.footer-contacts p {
+    margin: 8px 0;
+}
+
+/* Нижня частина футера */
+.footer-bottom {
+    border-top: 1px solid #fff;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+/* Відображення на телефоні */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+}
